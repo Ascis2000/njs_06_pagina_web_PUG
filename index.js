@@ -17,9 +17,9 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 // GET http://localhost:3000
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
     res.send('Hello 06 WEB PUG!')
-});
+}); */
 
 // Rutas WEB
 const paginaRoutes = require("./routes/pagina.web.routes");

@@ -1,10 +1,5 @@
 
-doctype html
-html
-   head
-      title = "About Me"
-   body
-      p.greetings#people Hello #{msj}!
-      p Esta página muestra la página about
-
-include ./footer.pug
+div.boxMain
+    p.greetings#people Valor de msj en la plantilla about.pug: #{msj}!
+    p Esta página muestra la página ABOUT
+    img(src="/assets/img/gato_about.jpg" width="200" alt="Descripción de la imagen")

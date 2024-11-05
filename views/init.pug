@@ -1,0 +1,28 @@
+
+doctype html
+html(lang="en")
+
+    include ./head.pug
+    include ./header.pug
+
+    body
+        main
+            p Valor de msj en main.pug: #{msj}!
+
+            if page === ''
+                include ./home.pug
+
+            if page === 'about'
+                include ./about.pug
+            
+            else if page === 'location'
+                include ./location.pug
+
+            else if page === 'mission'
+                include ./mission.pug
+
+            else if page === 'contact'
+                include ./contact.pug
+
+
+include ./footer.pug
