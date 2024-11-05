@@ -1,0 +1,14 @@
+
+doctype html
+html
+    include ./header.pug
+
+    body
+    if about
+        p Hola, #{msj}!
+        
+    else
+        p Por favor, inicia sesión para continuar.
+        p.greetings#people Hello #{msj}!
+
+include ./footer.pug
